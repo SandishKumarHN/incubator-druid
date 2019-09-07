@@ -56,13 +56,13 @@ public class BitmapBenchmark
   static final ImmutableBitmap GENERIC_ROARING[] = new ImmutableBitmap[SIZE];
   static final ConciseBitmapFactory CONCISE_FACTORY = new ConciseBitmapFactory();
   static final RoaringBitmapFactory ROARING_FACTORY = new RoaringBitmapFactory();
-  static Random rand = new Random(0);
-  static long totalConciseBytes = 0;
-  static long totalRoaringBytes = 0;
-  static long conciseCount = 0;
-  static long roaringCount = 0;
-  static long unionCount = 0;
-  static long minIntersection = 0;
+  static final Random rand = new Random(0);
+  static final long totalConciseBytes = 0;
+  static final long totalRoaringBytes = 0;
+  static final long conciseCount = 0;
+  static final long roaringCount = 0;
+  static final long unionCount = 0;
+  static final long minIntersection = 0;
   @Rule
   public TestRule benchmarkRun = new BenchmarkRule();
 

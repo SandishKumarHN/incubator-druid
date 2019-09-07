@@ -40,7 +40,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class BytesBoundedLinkedQueueTest
 {
-  private static int delayMS = 50;
+  private static final int delayMS = 50;
   private ExecutorService exec = Executors.newCachedThreadPool();
 
   private static BlockingQueue<TestObject> getQueue(final int capacity)

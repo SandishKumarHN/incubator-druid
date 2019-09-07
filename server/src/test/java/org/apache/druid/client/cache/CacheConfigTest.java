@@ -42,8 +42,8 @@ import java.util.Properties;
  */
 public class CacheConfigTest
 {
-  static Injector injector;
-  static JsonConfigurator configurator;
+  static final Injector injector;
+  static final JsonConfigurator configurator;
   JsonConfigProvider<CacheConfig> configProvider;
   private static final String PROPERTY_PREFIX = "org.apache.druid.collections.test.cache";
 

@@ -43,10 +43,10 @@ import java.util.Set;
 
 public class ScanQueryTest
 {
-  private static QuerySegmentSpec intervalSpec;
-  private static ScanResultValue s1;
-  private static ScanResultValue s2;
-  private static ScanResultValue s3;
+  private static final QuerySegmentSpec intervalSpec;
+  private static final ScanResultValue s1;
+  private static final ScanResultValue s2;
+  private static final ScanResultValue s3;
 
   @BeforeClass
   public static void setup()

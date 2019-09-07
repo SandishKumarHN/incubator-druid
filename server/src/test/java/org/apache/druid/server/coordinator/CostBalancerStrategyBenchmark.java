@@ -62,7 +62,7 @@ public class CostBalancerStrategyBenchmark extends AbstractBenchmark
     this.strategy = costBalancerStrategy;
   }
 
-  private static List<ServerHolder> serverHolderList;
+  private static final List<ServerHolder> serverHolderList;
   volatile ServerHolder selected;
 
   @BeforeClass

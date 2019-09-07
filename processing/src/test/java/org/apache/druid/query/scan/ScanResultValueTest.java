@@ -40,10 +40,10 @@ public class ScanResultValueTest
   private static final long TIME_2_LONG = 9876543210000L;
   private static final int TIME_3_INT = Integer.MAX_VALUE;
 
-  private static ScanResultValue compactedListSRVLongTimestamp;
-  private static ScanResultValue listSRVLongTimestamp;
-  private static ScanResultValue compactedListSRVIntegerTimestamp;
-  private static ScanResultValue listSRVIntegerTimestamp;
+  private static final ScanResultValue compactedListSRVLongTimestamp;
+  private static final ScanResultValue listSRVLongTimestamp;
+  private static final ScanResultValue compactedListSRVIntegerTimestamp;
+  private static final ScanResultValue listSRVIntegerTimestamp;
 
   @BeforeClass
   public static void setup()

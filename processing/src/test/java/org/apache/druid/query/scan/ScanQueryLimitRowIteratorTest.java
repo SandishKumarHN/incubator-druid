@@ -41,10 +41,10 @@ import java.util.concurrent.ThreadLocalRandom;
 public class ScanQueryLimitRowIteratorTest
 {
   private static final int NUM_ELEMENTS = 1000;
-  private static int batchSize;
-  private static int limit;
-  private static List<ScanResultValue> singleEventScanResultValues = new ArrayList<>();
-  private static List<ScanResultValue> multiEventScanResultValues = new ArrayList<>();
+  private static final int batchSize;
+  private static final int limit;
+  private static final List<ScanResultValue> singleEventScanResultValues = new ArrayList<>();
+  private static final List<ScanResultValue> multiEventScanResultValues = new ArrayList<>();
   private static final ScanQuery.ResultFormat RESULT_FORMAT = ScanQuery.ResultFormat.RESULT_FORMAT_LIST;
 
   public ScanQueryLimitRowIteratorTest(

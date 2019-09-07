@@ -29,7 +29,7 @@ import java.util.Comparator;
 
 public class DoubleDimensionHandler implements DimensionHandler<Double, Double, Double>
 {
-  private static Comparator<ColumnValueSelector> DOUBLE_COLUMN_COMPARATOR = (s1, s2) -> {
+  private static final Comparator<ColumnValueSelector> DOUBLE_COLUMN_COMPARATOR = (s1, s2) -> {
     if (s1.isNull()) {
       return s2.isNull() ? 0 : -1;
     } else if (s2.isNull()) {
@@ -37,7 +37,7 @@ public class DoubleDimensionHandler implements DimensionHandler<Double, Double, 
     } else {
       return Double.compare(s1.getDouble(), s2.getDouble());
     }
-  };
+  }
 
   private final String dimensionName;
 

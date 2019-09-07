@@ -203,11 +203,11 @@ public class KinesisIndexTaskTest extends EasyMockSupport
   private static final String STREAM = "stream";
   private static final String SHARD_ID1 = "1";
   private static final String SHARD_ID0 = "0";
-  private static KinesisRecordSupplier recordSupplier;
-  private static List<OrderedPartitionableRecord<String, String>> records;
+  private static final KinesisRecordSupplier recordSupplier;
+  private static final List<OrderedPartitionableRecord<String, String>> records;
 
-  private static ServiceEmitter emitter;
-  private static ListeningExecutorService taskExec;
+  private static final ServiceEmitter emitter;
+  private static final ListeningExecutorService taskExec;
 
   private final List<Task> runningTasks = new ArrayList<>();
 

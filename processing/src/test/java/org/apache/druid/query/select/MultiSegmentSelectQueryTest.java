@@ -124,13 +124,13 @@ public class MultiSegmentSelectQueryTest
       "2011-01-12T07:00:00.000Z\tspot\thealth\t1300\t13000.0\t13000.0\t130000\tpreferred\thpreferred\t999.000000"
   };
 
-  private static Segment segment0;
-  private static Segment segment1;
-  private static Segment segment_override;  // this makes segment0 split into three logical segments
+  private static final Segment segment0;
+  private static final Segment segment1;
+  private static final Segment segment_override;  // this makes segment0 split into three logical segments
 
-  private static List<String> segmentIdentifiers;
+  private static final List<String> segmentIdentifiers;
 
-  private static QueryRunner runner;
+  private static final QueryRunner runner;
 
   @BeforeClass
   public static void setup() throws IOException

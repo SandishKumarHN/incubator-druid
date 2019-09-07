@@ -112,7 +112,7 @@ public class LookupCoordinatorManagerTest
   );
 
   private static final AtomicLong EVENT_EMITS = new AtomicLong(0L);
-  private static ServiceEmitter SERVICE_EMITTER;
+  private static final ServiceEmitter SERVICE_EMITTER;
 
   @BeforeClass
   public static void setUpStatic()

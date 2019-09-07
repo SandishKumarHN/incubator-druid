@@ -109,8 +109,8 @@ public class MultiSegmentScanQueryTest
       "2011-01-13T12:00:00.000Z\tupfront\tpremium\t1600\t16000.0\t16000.0\t160000\tpreferred\tppreferred\t1564.617729\tvalue"
   };
 
-  private static Segment segment0;
-  private static Segment segment1;
+  private static final Segment segment0;
+  private static final Segment segment1;
 
   @BeforeClass
   public static void setup() throws IOException

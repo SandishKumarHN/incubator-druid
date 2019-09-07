@@ -40,7 +40,7 @@ public class EmittingLogger extends Logger
   public static final String EXCEPTION_MESSAGE_KEY = "exceptionMessage";
   public static final String EXCEPTION_STACK_TRACE_KEY = "exceptionStackTrace";
 
-  private static volatile ServiceEmitter emitter = null;
+  private static final volatile ServiceEmitter emitter = null;
 
   private final String className;
 

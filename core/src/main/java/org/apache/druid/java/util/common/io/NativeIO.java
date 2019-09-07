@@ -57,11 +57,11 @@ public class NativeIO
    */
   private static final int SYNC_FILE_RANGE_WAIT_AFTER = 4;
 
-  private static Field field;
+  private static final Field field;
 
-  private static volatile boolean initialized = false;
-  private static volatile boolean fadvisePossible = true;
-  private static volatile boolean syncFileRangePossible = true;
+  private static final volatile boolean initialized = false;
+  private static final volatile boolean fadvisePossible = true;
+  private static final volatile boolean syncFileRangePossible = true;
 
   static {
     field = getFieldByReflection(FileDescriptor.class, "fd");

@@ -39,13 +39,11 @@ import java.net.URI;
 
 public class LookupIntrospectionResourceTest
 {
-  private static LookupExtractorFactory mockLookupExtractorFactory = EasyMock.createMock(LookupExtractorFactory.class);
+  private static final LookupExtractorFactory mockLookupExtractorFactory = EasyMock.createMock(LookupExtractorFactory.class);
 
-  private static LookupExtractorFactoryContainerProvider mockLookupExtractorFactoryContainerProvider =
-      EasyMock.createMock(LookupExtractorFactoryContainerProvider.class);
+  private static final LookupExtractorFactoryContainerProvider mockLookupExtractorFactoryContainerProvider = EasyMock.createMock(LookupExtractorFactoryContainerProvider.class);
 
-  private static LookupIntrospectHandler mockLookupIntrospectHandler =
-      EasyMock.createMock(LookupIntrospectHandler.class);
+  private static final LookupIntrospectHandler mockLookupIntrospectHandler = EasyMock.createMock(LookupIntrospectHandler.class);
 
   private LookupIntrospectionResource lookupIntrospectionResource =
       new LookupIntrospectionResource(mockLookupExtractorFactoryContainerProvider);

@@ -198,11 +198,11 @@ public class KafkaIndexTaskTest
   private static final ObjectMapper OBJECT_MAPPER = new TestUtils().getTestObjectMapper();
   private static final long POLL_RETRY_MS = 100;
 
-  private static TestingCluster zkServer;
-  private static TestBroker kafkaServer;
-  private static ServiceEmitter emitter;
-  private static ListeningExecutorService taskExec;
-  private static int topicPostfix;
+  private static final TestingCluster zkServer;
+  private static final TestBroker kafkaServer;
+  private static final ServiceEmitter emitter;
+  private static final ListeningExecutorService taskExec;
+  private static final int topicPostfix;
 
   static {
     new KafkaIndexTaskModule().getJacksonModules().forEach(OBJECT_MAPPER::registerModule);

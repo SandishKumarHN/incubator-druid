@@ -114,7 +114,7 @@ public class QueryRunnerTestHelper
   public static final String INDEX_METRIC = "index";
   public static final String UNIQUE_METRIC = "uniques";
   public static final String ADD_ROWS_INDEX_CONSTANT_METRIC = "addRowsIndexConstant";
-  public static String dependentPostAggMetric = "dependentPostAgg";
+  public static final String dependentPostAggMetric = "dependentPostAgg";
   public static final CountAggregatorFactory ROWS_COUNT = new CountAggregatorFactory("rows");
   public static final LongSumAggregatorFactory INDEX_LONG_SUM = new LongSumAggregatorFactory("index", INDEX_METRIC);
   public static final LongSumAggregatorFactory TIME_LONG_SUM = new LongSumAggregatorFactory("sumtime", TIME_DIMENSION);
@@ -182,7 +182,7 @@ public class QueryRunnerTestHelper
   );
 
   public static final String HYPER_UNIQUE_FINALIZING_POST_AGG_METRIC = "hyperUniqueFinalizingPostAggMetric";
-  public static ArithmeticPostAggregator hyperUniqueFinalizingPostAgg = new ArithmeticPostAggregator(
+  public static final ArithmeticPostAggregator hyperUniqueFinalizingPostAgg = new ArithmeticPostAggregator(
       HYPER_UNIQUE_FINALIZING_POST_AGG_METRIC,
       "+",
       Lists.newArrayList(

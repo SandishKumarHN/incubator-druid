@@ -80,8 +80,8 @@ public class OverlordSecurityResourceFilterTest extends ResourceFilterTestHelper
   private final Injector injector;
   private final Task noopTask = NoopTask.create();
 
-  private static boolean mockedOnceTsqa;
-  private static boolean mockedOnceSM;
+  private static final boolean mockedOnceTsqa;
+  private static final boolean mockedOnceSM;
   private TaskStorageQueryAdapter tsqa;
   private SupervisorManager supervisorManager;
 

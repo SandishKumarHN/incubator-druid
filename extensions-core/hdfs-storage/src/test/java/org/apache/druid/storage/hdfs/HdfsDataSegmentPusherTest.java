@@ -73,7 +73,7 @@ import java.util.regex.Pattern;
  */
 public class HdfsDataSegmentPusherTest
 {
-  static TestObjectMapper objectMapper;
+  static final TestObjectMapper objectMapper;
 
   static {
     objectMapper = new TestObjectMapper();

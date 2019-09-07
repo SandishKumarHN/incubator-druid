@@ -30,9 +30,9 @@ import java.lang.reflect.Method;
 class AllocationMetricCollectors
 {
   private static final Logger log = new Logger(AllocationMetricCollectors.class);
-  private static Method getThreadAllocatedBytes;
-  private static ThreadMXBean threadMXBean;
-  private static boolean initialized = false;
+  private static final Method getThreadAllocatedBytes;
+  private static final ThreadMXBean threadMXBean;
+  private static final boolean initialized = false;
 
   static {
     try {

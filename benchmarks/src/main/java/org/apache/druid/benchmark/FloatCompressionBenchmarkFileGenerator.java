@@ -52,7 +52,7 @@ public class FloatCompressionBenchmarkFileGenerator
           CompressionStrategy.NONE
       );
 
-  private static String dirPath = "floatCompress/";
+  private static final String dirPath = "floatCompress/";
 
   public static void main(String[] args) throws IOException
   {

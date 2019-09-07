@@ -36,7 +36,7 @@ import java.util.Set;
 
 public class MaterializedViewUtilsTest 
 {
-  private static ObjectMapper jsonMapper = TestHelper.makeJsonMapper();
+  private static final ObjectMapper jsonMapper = TestHelper.makeJsonMapper();
   
   @Test
   public void testGetRequiredFieldsFromGroupByQuery() throws Exception

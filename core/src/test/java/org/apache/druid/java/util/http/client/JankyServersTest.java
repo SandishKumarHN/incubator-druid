@@ -51,10 +51,10 @@ import java.util.concurrent.Executors;
  */
 public class JankyServersTest
 {
-  static ExecutorService exec;
-  static ServerSocket silentServerSocket;
-  static ServerSocket echoServerSocket;
-  static ServerSocket closingServerSocket;
+  static final ExecutorService exec;
+  static final ServerSocket silentServerSocket;
+  static final ServerSocket echoServerSocket;
+  static final ServerSocket closingServerSocket;
 
   @Rule
   public ExpectedException expectedException = ExpectedException.none();

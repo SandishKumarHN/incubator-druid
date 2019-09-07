@@ -90,8 +90,8 @@ public class SchemalessIndexTest
   private static final Map<Integer, Map<Integer, QueryableIndex>> MERGED_INDEXES = new HashMap<>();
   private static final List<QueryableIndex> ROW_PERSISTED_INDEXES = new ArrayList<>();
 
-  private static IncrementalIndex index = null;
-  private static QueryableIndex mergedIndex = null;
+  private static final IncrementalIndex index = null;
+  private static final QueryableIndex mergedIndex = null;
 
   static {
     ComplexMetrics.registerSerde("hyperUnique", new HyperUniquesSerde());

@@ -74,8 +74,8 @@ public class BitmapCreationBenchmark extends AbstractBenchmark
   private static final int NUM_BITS = 100000;
 
 
-  static Random random;
-  static int[] randIndex = new int[NUM_BITS];
+  static final Random random;
+  static final int[] randIndex = new int[NUM_BITS];
 
   @AfterClass
   public static void cleanupAfterClass()

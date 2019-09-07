@@ -97,8 +97,8 @@ public class KafkaSamplerSpecTest
       OBJECT_MAPPER
   );
 
-  private static TestingCluster zkServer;
-  private static TestBroker kafkaServer;
+  private static final TestingCluster zkServer;
+  private static final TestBroker kafkaServer;
 
   private static List<ProducerRecord<byte[], byte[]>> generateRecords(String topic)
   {

@@ -53,14 +53,10 @@ import java.util.List;
 public class PooledTopNAlgorithm
     extends BaseTopNAlgorithm<int[], BufferAggregator[], PooledTopNAlgorithm.PooledTopNParams>
 {
-  private static boolean SPECIALIZE_GENERIC_ONE_AGG_POOLED_TOPN =
-      !Boolean.getBoolean("dontSpecializeGeneric1AggPooledTopN");
-  private static boolean SPECIALIZE_GENERIC_TWO_AGG_POOLED_TOPN =
-      !Boolean.getBoolean("dontSpecializeGeneric2AggPooledTopN");
-  private static boolean SPECIALIZE_HISTORICAL_ONE_SIMPLE_DOUBLE_AGG_POOLED_TOPN =
-      !Boolean.getBoolean("dontSpecializeHistorical1SimpleDoubleAggPooledTopN");
-  private static boolean SPECIALIZE_HISTORICAL_SINGLE_VALUE_DIM_SELECTOR_ONE_SIMPLE_DOUBLE_AGG_POOLED_TOPN =
-      !Boolean.getBoolean("dontSpecializeHistoricalSingleValueDimSelector1SimpleDoubleAggPooledTopN");
+  private static final boolean SPECIALIZE_GENERIC_ONE_AGG_POOLED_TOPN = !Boolean.getBoolean("dontSpecializeGeneric1AggPooledTopN");
+  private static final boolean SPECIALIZE_GENERIC_TWO_AGG_POOLED_TOPN = !Boolean.getBoolean("dontSpecializeGeneric2AggPooledTopN");
+  private static final boolean SPECIALIZE_HISTORICAL_ONE_SIMPLE_DOUBLE_AGG_POOLED_TOPN = !Boolean.getBoolean("dontSpecializeHistorical1SimpleDoubleAggPooledTopN");
+  private static final boolean SPECIALIZE_HISTORICAL_SINGLE_VALUE_DIM_SELECTOR_ONE_SIMPLE_DOUBLE_AGG_POOLED_TOPN = !Boolean.getBoolean("dontSpecializeHistoricalSingleValueDimSelector1SimpleDoubleAggPooledTopN");
 
   /**
    * See TopNQueryRunnerTest

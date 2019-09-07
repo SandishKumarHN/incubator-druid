@@ -76,8 +76,8 @@ public class TimeBoundaryQueryRunnerTest
   private static final QueryRunnerFactory FACTORY = new TimeBoundaryQueryRunnerFactory(
       QueryRunnerTestHelper.NOOP_QUERYWATCHER
   );
-  private static Segment segment0;
-  private static Segment segment1;
+  private static final Segment segment0;
+  private static final Segment segment1;
 
   public TimeBoundaryQueryRunnerTest(
       QueryRunner runner

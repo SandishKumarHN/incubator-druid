@@ -115,8 +115,8 @@ public class DruidAvaticaHandlerTest extends CalciteTestBase
   };
   private static final String DUMMY_SQL_QUERY_ID = "dummy";
 
-  private static QueryRunnerFactoryConglomerate conglomerate;
-  private static Closer resourceCloser;
+  private static final QueryRunnerFactoryConglomerate conglomerate;
+  private static final Closer resourceCloser;
 
   @BeforeClass
   public static void setUpClass()

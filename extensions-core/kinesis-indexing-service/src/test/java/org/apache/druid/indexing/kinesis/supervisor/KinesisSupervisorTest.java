@@ -122,7 +122,7 @@ public class KinesisSupervisorTest extends EasyMockSupport
   private static final StreamPartition<String> SHARD1_PARTITION = StreamPartition.of(STREAM, SHARD_ID1);
   private static final StreamPartition<String> SHARD0_PARTITION = StreamPartition.of(STREAM, SHARD_ID0);
 
-  private static DataSchema dataSchema;
+  private static final DataSchema dataSchema;
   private KinesisRecordSupplier supervisorRecordSupplier;
 
   private final int numThreads;

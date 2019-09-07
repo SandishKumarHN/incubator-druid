@@ -29,7 +29,7 @@ import java.util.Comparator;
 
 public class FloatDimensionHandler implements DimensionHandler<Float, Float, Float>
 {
-  private static Comparator<ColumnValueSelector> FLOAT_COLUMN_COMPARATOR = (s1, s2) -> {
+  private static final Comparator<ColumnValueSelector> FLOAT_COLUMN_COMPARATOR = (s1, s2) -> {
     if (s1.isNull()) {
       return s2.isNull() ? 0 : -1;
     } else if (s2.isNull()) {
@@ -37,7 +37,7 @@ public class FloatDimensionHandler implements DimensionHandler<Float, Float, Flo
     } else {
       return Float.compare(s1.getFloat(), s2.getFloat());
     }
-  };
+  }
 
   private final String dimensionName;
 

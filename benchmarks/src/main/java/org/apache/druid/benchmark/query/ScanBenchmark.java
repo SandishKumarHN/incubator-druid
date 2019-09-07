@@ -118,7 +118,7 @@ public class ScanBenchmark
   private int limit;
 
   @Param({"NONE", "DESCENDING", "ASCENDING"})
-  private static ScanQuery.Order ordering;
+  private static final ScanQuery.Order ordering;
 
   private static final Logger log = new Logger(ScanBenchmark.class);
   private static final ObjectMapper JSON_MAPPER;

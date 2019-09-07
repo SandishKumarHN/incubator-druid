@@ -38,7 +38,7 @@ public class LexicographicTopNMetricSpec implements TopNMetricSpec
 {
   private static final byte CACHE_TYPE_ID = 0x1;
 
-  private static Comparator<String> comparator = StringComparators.LEXICOGRAPHIC;
+  private static final Comparator<String> comparator = StringComparators.LEXICOGRAPHIC;
 
   private final String previousStop;
 

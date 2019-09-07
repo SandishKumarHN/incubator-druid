@@ -61,8 +61,8 @@ public class DruidStatementTest extends CalciteTestBase
   @Rule
   public QueryLogHook queryLogHook = QueryLogHook.create();
 
-  private static QueryRunnerFactoryConglomerate conglomerate;
-  private static Closer resourceCloser;
+  private static final QueryRunnerFactoryConglomerate conglomerate;
+  private static final Closer resourceCloser;
 
   @BeforeClass
   public static void setUpClass()

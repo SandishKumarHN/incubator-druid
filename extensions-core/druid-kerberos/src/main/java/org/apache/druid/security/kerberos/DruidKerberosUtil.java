@@ -48,7 +48,7 @@ public class DruidKerberosUtil
   private static final Logger log = new Logger(DruidKerberosUtil.class);
 
   // A fair reentrant lock
-  private static ReentrantLock kerberosLock = new ReentrantLock(true);
+  private static final ReentrantLock kerberosLock = new ReentrantLock(true);
 
   /**
    * This method always needs to be called within a doAs block so that the client's TGT credentials

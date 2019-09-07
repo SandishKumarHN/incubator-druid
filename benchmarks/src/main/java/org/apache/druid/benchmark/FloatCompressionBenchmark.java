@@ -56,13 +56,13 @@ import java.util.concurrent.TimeUnit;
 public class FloatCompressionBenchmark
 {
   @Param("floatCompress/")
-  private static String dirPath;
+  private static final String dirPath;
 
   @Param({"enumerate", "zipfLow", "zipfHigh", "sequential", "uniform"})
-  private static String file;
+  private static final String file;
 
   @Param({"lz4", "none"})
-  private static String strategy;
+  private static final String strategy;
 
   private Supplier<ColumnarFloats> supplier;
 

@@ -35,7 +35,7 @@ import java.util.Set;
  */
 public class TestIntegerSet
 {
-  private static Iterable<Class<? extends MutableBitmap>> clazzes = Lists.newArrayList(
+  private static final Iterable<Class<? extends MutableBitmap>> clazzes = Lists.newArrayList(
       WrappedBitSetBitmap.class,
       WrappedConciseBitmap.class,
       WrappedRoaringBitmap.class

@@ -62,7 +62,7 @@ import java.util.concurrent.TimeoutException;
 
 public class PrefetchableTextFilesFirehoseFactoryTest
 {
-  private static long FILE_SIZE = -1;
+  private static final long FILE_SIZE = -1;
 
   private static final StringInputRowParser PARSER = new StringInputRowParser(
       new CSVParseSpec(
@@ -85,8 +85,8 @@ public class PrefetchableTextFilesFirehoseFactoryTest
   );
 
   @ClassRule
-  public static TemporaryFolder tempDir = new TemporaryFolder();
-  private static File TEST_DIR;
+  public static final TemporaryFolder tempDir = new TemporaryFolder();
+  private static final File TEST_DIR;
 
   @Rule
   public ExpectedException expectedException = ExpectedException.none();

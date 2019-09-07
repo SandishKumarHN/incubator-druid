@@ -59,7 +59,7 @@ public class SqlFirehoseTest
   private static final TypeReference<Map<String, Object>> TYPE_REF = new TypeReference<Map<String, Object>>()
   {
   };
-  private static File TEST_DIR;
+  private static final File TEST_DIR;
   private List<Map<String, Object>> inputs;
   private List<FileInputStream> fileList;
   private InputRowParser parser;

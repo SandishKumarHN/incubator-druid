@@ -53,7 +53,7 @@ public class LongCompressionBenchmarkFileGenerator
   public static final List<CompressionFactory.LongEncodingStrategy> ENCODINGS =
       ImmutableList.of(CompressionFactory.LongEncodingStrategy.AUTO, CompressionFactory.LongEncodingStrategy.LONGS);
 
-  private static String dirPath = "longCompress/";
+  private static final String dirPath = "longCompress/";
 
   public static void main(String[] args) throws IOException
   {

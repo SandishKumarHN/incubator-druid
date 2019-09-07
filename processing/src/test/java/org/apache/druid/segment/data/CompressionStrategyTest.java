@@ -71,7 +71,7 @@ public class CompressionStrategyTest
 
   // MUST be smaller than CompressedPools.BUFFER_SIZE
   private static final int DATA_SIZER = 0xFFFF;
-  private static byte[] originalData;
+  private static final byte[] originalData;
 
   @BeforeClass
   public static void setupClass()

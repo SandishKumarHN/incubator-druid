@@ -86,9 +86,9 @@ public class QuantileSqlAggregatorTest extends CalciteTestBase
 {
   private static final String DATA_SOURCE = "foo";
 
-  private static QueryRunnerFactoryConglomerate conglomerate;
-  private static Closer resourceCloser;
-  private static AuthenticationResult authenticationResult = CalciteTests.REGULAR_USER_AUTH_RESULT;
+  private static final QueryRunnerFactoryConglomerate conglomerate;
+  private static final Closer resourceCloser;
+  private static final AuthenticationResult authenticationResult = CalciteTests.REGULAR_USER_AUTH_RESULT;
   private static final Map<String, Object> QUERY_CONTEXT_DEFAULT = ImmutableMap.of(
       PlannerContext.CTX_SQL_QUERY_ID, "dummy"
   );

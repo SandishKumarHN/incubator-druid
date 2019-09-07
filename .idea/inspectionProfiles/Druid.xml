@@ -338,6 +338,12 @@
         <constraint name="m" within="" contains="" />
         <constraint name="x" minCount="0" maxCount="2147483647" within="" contains="" />
       </searchConfiguration>
+      <searchConfiguration name="" text="static $Type$ $Variable$ = $Init$;" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="Type" within="" contains="" />
+        <constraint name="Variable" within="" contains="" />
+        <constraint name="Init" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
     </inspection_tool>
     <inspection_tool class="SimplifyStreamApiCallChains" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">

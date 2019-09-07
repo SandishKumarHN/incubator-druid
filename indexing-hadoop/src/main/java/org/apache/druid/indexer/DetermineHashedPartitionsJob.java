@@ -263,7 +263,7 @@ public class DetermineHashedPartitionsJob implements Jobby
 
   public static class DetermineCardinalityMapper extends HadoopDruidIndexerMapper<LongWritable, BytesWritable>
   {
-    private static HashFunction hashFunction = Hashing.murmur3_128();
+    private static final HashFunction hashFunction = Hashing.murmur3_128();
     private Granularity rollupGranularity = null;
     private Map<Interval, HyperLogLogCollector> hyperLogLogs;
     private HadoopDruidIndexerConfig config;

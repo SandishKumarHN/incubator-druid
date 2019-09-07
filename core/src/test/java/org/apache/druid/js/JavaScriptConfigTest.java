@@ -25,7 +25,7 @@ import org.junit.Test;
 
 public class JavaScriptConfigTest
 {
-  private static ObjectMapper mapper = new ObjectMapper();
+  private static final ObjectMapper mapper = new ObjectMapper();
 
   @Test
   public void testSerde() throws Exception

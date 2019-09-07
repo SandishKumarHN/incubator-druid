@@ -123,19 +123,19 @@ public class KinesisRecordSupplierTest extends EasyMockSupport
     }
   }
 
-  private static int recordsPerFetch;
-  private static AmazonKinesis kinesis;
-  private static DescribeStreamResult describeStreamResult0;
-  private static DescribeStreamResult describeStreamResult1;
-  private static GetShardIteratorResult getShardIteratorResult0;
-  private static GetShardIteratorResult getShardIteratorResult1;
-  private static GetRecordsResult getRecordsResult0;
-  private static GetRecordsResult getRecordsResult1;
-  private static StreamDescription streamDescription0;
-  private static StreamDescription streamDescription1;
-  private static Shard shard0;
-  private static Shard shard1;
-  private static KinesisRecordSupplier recordSupplier;
+  private static final int recordsPerFetch;
+  private static final AmazonKinesis kinesis;
+  private static final DescribeStreamResult describeStreamResult0;
+  private static final DescribeStreamResult describeStreamResult1;
+  private static final GetShardIteratorResult getShardIteratorResult0;
+  private static final GetShardIteratorResult getShardIteratorResult1;
+  private static final GetRecordsResult getRecordsResult0;
+  private static final GetRecordsResult getRecordsResult1;
+  private static final StreamDescription streamDescription0;
+  private static final StreamDescription streamDescription1;
+  private static final Shard shard0;
+  private static final Shard shard1;
+  private static final KinesisRecordSupplier recordSupplier;
 
   @Before
   public void setupTest()

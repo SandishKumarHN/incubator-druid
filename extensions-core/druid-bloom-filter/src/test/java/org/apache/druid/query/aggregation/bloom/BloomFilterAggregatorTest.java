@@ -92,15 +92,15 @@ public class BloomFilterAggregatorTest
 
   private static final int MAX_NUM_VALUES = 15;
 
-  private static BloomKFilter filter1;
-  private static BloomKFilter filter2;
+  private static final BloomKFilter filter1;
+  private static final BloomKFilter filter2;
 
-  private static String serializedFilter1;
-  private static String serializedFilter2;
-  private static String serializedCombinedFilter;
-  private static String serializedLongFilter;
-  private static String serializedDoubleFilter;
-  private static String serializedFloatFilter;
+  private static final String serializedFilter1;
+  private static final String serializedFilter2;
+  private static final String serializedCombinedFilter;
+  private static final String serializedLongFilter;
+  private static final String serializedDoubleFilter;
+  private static final String serializedFloatFilter;
 
   static {
     try {

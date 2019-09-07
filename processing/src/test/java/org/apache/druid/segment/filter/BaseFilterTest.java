@@ -114,8 +114,7 @@ public abstract class BaseFilterTest
   // For filter tests, the test setup creates a segment.
   // Creating a new segment for every test method call is pretty slow, so cache the StorageAdapters.
   // Each thread gets its own map.
-  private static ThreadLocal<Map<String, Map<String, Pair<StorageAdapter, Closeable>>>> adapterCache =
-      ThreadLocal.withInitial(HashMap::new);
+  private static final ThreadLocal<Map<String, Map<String, Pair<StorageAdapter, Closeable>>>> adapterCache = ThreadLocal.withInitial(HashMap::new);
 
   public BaseFilterTest(
       String testName,

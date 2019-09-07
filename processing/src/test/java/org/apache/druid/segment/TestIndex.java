@@ -163,25 +163,25 @@ public class TestIndex
     ComplexMetrics.registerSerde("hyperUnique", new HyperUniquesSerde());
   }
 
-  private static Supplier<IncrementalIndex> realtimeIndex = Suppliers.memoize(
+  private static final Supplier<IncrementalIndex> realtimeIndex = Suppliers.memoize(
       () -> makeRealtimeIndex("druid.sample.numeric.tsv")
   );
-  private static Supplier<IncrementalIndex> noRollupRealtimeIndex = Suppliers.memoize(
+  private static final Supplier<IncrementalIndex> noRollupRealtimeIndex = Suppliers.memoize(
       () -> makeRealtimeIndex("druid.sample.numeric.tsv", false)
   );
-  private static Supplier<IncrementalIndex> noBitmapRealtimeIndex = Suppliers.memoize(
+  private static final Supplier<IncrementalIndex> noBitmapRealtimeIndex = Suppliers.memoize(
       () -> makeRealtimeIndex("druid.sample.numeric.tsv", false, false)
   );
-  private static Supplier<QueryableIndex> mmappedIndex = Suppliers.memoize(
+  private static final Supplier<QueryableIndex> mmappedIndex = Suppliers.memoize(
       () -> persistRealtimeAndLoadMMapped(realtimeIndex.get())
   );
-  private static Supplier<QueryableIndex> noRollupMmappedIndex = Suppliers.memoize(
+  private static final Supplier<QueryableIndex> noRollupMmappedIndex = Suppliers.memoize(
       () -> persistRealtimeAndLoadMMapped(noRollupRealtimeIndex.get())
   );
-  private static Supplier<QueryableIndex> noBitmapMmappedIndex = Suppliers.memoize(
+  private static final Supplier<QueryableIndex> noBitmapMmappedIndex = Suppliers.memoize(
       () -> persistRealtimeAndLoadMMapped(noBitmapRealtimeIndex.get())
   );
-  private static Supplier<QueryableIndex> mergedRealtime = Suppliers.memoize(() -> {
+  private static final Supplier<QueryableIndex> mergedRealtime = Suppliers.memoize(() -> {
     try {
       IncrementalIndex top = makeRealtimeIndex("druid.sample.numeric.tsv.top");
       IncrementalIndex bottom = makeRealtimeIndex("druid.sample.numeric.tsv.bottom");

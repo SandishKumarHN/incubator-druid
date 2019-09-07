@@ -89,8 +89,8 @@ import java.util.zip.Deflater;
 
 public class AsyncQueryForwardingServletTest extends BaseJettyTest
 {
-  private static int port1;
-  private static int port2;
+  private static final int port1;
+  private static final int port2;
 
   @Override
   @Before

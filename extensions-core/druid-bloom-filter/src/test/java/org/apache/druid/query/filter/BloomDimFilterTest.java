@@ -90,7 +90,7 @@ public class BloomDimFilterTest extends BaseFilterTest
       PARSER.parseBatch(ImmutableMap.of("dim0", "5", "dim1", "abc")).get(0)
   );
 
-  private static DefaultObjectMapper mapper = new DefaultObjectMapper();
+  private static final DefaultObjectMapper mapper = new DefaultObjectMapper();
 
   public BloomDimFilterTest(
       String testName,

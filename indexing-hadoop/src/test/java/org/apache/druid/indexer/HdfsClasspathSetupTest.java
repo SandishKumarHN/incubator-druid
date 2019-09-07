@@ -59,10 +59,10 @@ import java.util.concurrent.TimeoutException;
 
 public class HdfsClasspathSetupTest
 {
-  private static MiniDFSCluster miniCluster;
-  private static File hdfsTmpDir;
-  private static Configuration conf;
-  private static String dummyJarString = "This is a test jar file.";
+  private static final MiniDFSCluster miniCluster;
+  private static final File hdfsTmpDir;
+  private static final Configuration conf;
+  private static final String dummyJarString = "This is a test jar file.";
   private File dummyJarFile;
   private Path finalClasspath;
   private Path intermediatePath;

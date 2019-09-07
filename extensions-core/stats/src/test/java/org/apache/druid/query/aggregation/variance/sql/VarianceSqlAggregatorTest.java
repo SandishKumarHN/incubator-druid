@@ -79,11 +79,11 @@ import java.util.List;
 
 public class VarianceSqlAggregatorTest
 {
-  private static AuthenticationResult authenticationResult = CalciteTests.REGULAR_USER_AUTH_RESULT;
+  private static final AuthenticationResult authenticationResult = CalciteTests.REGULAR_USER_AUTH_RESULT;
   private static final String DATA_SOURCE = "numfoo";
 
-  private static QueryRunnerFactoryConglomerate conglomerate;
-  private static Closer resourceCloser;
+  private static final QueryRunnerFactoryConglomerate conglomerate;
+  private static final Closer resourceCloser;
 
   @BeforeClass
   public static void setUpClass()

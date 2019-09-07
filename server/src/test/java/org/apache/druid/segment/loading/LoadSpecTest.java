@@ -63,7 +63,7 @@ public class LoadSpecTest
     this.expectedId = expectedId;
   }
 
-  private static ObjectMapper mapper;
+  private static final ObjectMapper mapper;
 
   @BeforeClass
   public static void setUp()

@@ -141,8 +141,8 @@ public class SystemSchemaTest extends CalciteTestBase
   private Request request;
   private DruidSchema druidSchema;
   private AuthorizerMapper authMapper;
-  private static QueryRunnerFactoryConglomerate conglomerate;
-  private static Closer resourceCloser;
+  private static final QueryRunnerFactoryConglomerate conglomerate;
+  private static final Closer resourceCloser;
   private MetadataSegmentView metadataView;
   private DruidNodeDiscoveryProvider druidNodeDiscoveryProvider;
   private InventoryView serverInventoryView;

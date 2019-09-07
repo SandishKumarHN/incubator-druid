@@ -38,8 +38,7 @@ import java.util.List;
 
 public class HyperUniquesSerde extends ComplexMetricSerde
 {
-  private static Comparator<HyperLogLogCollector> comparator =
-      Comparator.nullsFirst(Comparator.comparing(HyperLogLogCollector::toByteBuffer));
+  private static final Comparator<HyperLogLogCollector> comparator = Comparator.nullsFirst(Comparator.comparing(HyperLogLogCollector::toByteBuffer));
 
   private final HyperLogLogHash hyperLogLogHash;
 

@@ -35,7 +35,7 @@ import java.util.Collections;
 
 public class InDimFilterSerDesrTest
 {
-  private static ObjectMapper mapper;
+  private static final ObjectMapper mapper;
 
   private final String serializedFilter =
       "{\"type\":\"in\",\"dimension\":\"dimTest\",\"values\":[\"bad\",\"good\"],\"extractionFn\":null}";

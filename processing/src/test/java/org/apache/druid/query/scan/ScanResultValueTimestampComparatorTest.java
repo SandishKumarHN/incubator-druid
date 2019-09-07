@@ -36,7 +36,7 @@ import java.util.List;
 
 public class ScanResultValueTimestampComparatorTest
 {
-  private static QuerySegmentSpec intervalSpec;
+  private static final QuerySegmentSpec intervalSpec;
 
   @BeforeClass
   public static void setup()

@@ -51,7 +51,7 @@ public class IncrementalIndexRowTypeBenchmark
   private IncrementalIndex incIndex;
   private IncrementalIndex incFloatIndex;
   private IncrementalIndex incStrIndex;
-  private static AggregatorFactory[] aggs;
+  private static final AggregatorFactory[] aggs;
   static final int DIMENSION_COUNT = 8;
   static final int MAX_ROWS = 250000;
 

@@ -95,7 +95,7 @@ import java.util.List;
 public class BloomFilterSqlAggregatorTest
 {
   private static final int TEST_NUM_ENTRIES = 1000;
-  private static AuthenticationResult authenticationResult = CalciteTests.REGULAR_USER_AUTH_RESULT;
+  private static final AuthenticationResult authenticationResult = CalciteTests.REGULAR_USER_AUTH_RESULT;
   private static final Injector INJECTOR = Guice.createInjector(
       binder -> {
         binder.bind(Key.get(ObjectMapper.class, Json.class)).toInstance(TestHelper.makeJsonMapper());
@@ -110,15 +110,14 @@ public class BloomFilterSqlAggregatorTest
       }
   );
 
-  private static ObjectMapper jsonMapper =
-      INJECTOR
+  private static final ObjectMapper jsonMapper = INJECTOR
           .getInstance(Key.get(ObjectMapper.class, Json.class))
           .registerModules(Collections.singletonList(new BloomFilterSerializersModule()));
 
   private static final String DATA_SOURCE = "numfoo";
 
-  private static QueryRunnerFactoryConglomerate conglomerate;
-  private static Closer resourceCloser;
+  private static final QueryRunnerFactoryConglomerate conglomerate;
+  private static final Closer resourceCloser;
 
   @BeforeClass
   public static void setUpClass()

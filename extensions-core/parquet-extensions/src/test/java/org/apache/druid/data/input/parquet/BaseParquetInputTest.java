@@ -47,21 +47,21 @@ import java.util.Map;
 
 class BaseParquetInputTest
 {
-  private static Map<String, String> parseSpecType = ImmutableMap.of(
+  private static final Map<String, String> parseSpecType = ImmutableMap.of(
       ParquetExtensionsModule.PARQUET_AVRO_INPUT_PARSER_TYPE,
       ParquetExtensionsModule.PARQUET_AVRO_PARSE_SPEC_TYPE,
       ParquetExtensionsModule.PARQUET_SIMPLE_INPUT_PARSER_TYPE,
       ParquetExtensionsModule.PARQUET_SIMPLE_PARSE_SPEC_TYPE
   );
 
-  private static Map<String, String> inputFormatType = ImmutableMap.of(
+  private static final Map<String, String> inputFormatType = ImmutableMap.of(
       ParquetExtensionsModule.PARQUET_AVRO_INPUT_PARSER_TYPE,
       "org.apache.druid.data.input.parquet.DruidParquetAvroInputFormat",
       ParquetExtensionsModule.PARQUET_SIMPLE_INPUT_PARSER_TYPE,
       "org.apache.druid.data.input.parquet.DruidParquetInputFormat"
   );
 
-  private static Map<String, Class<? extends InputFormat>> inputFormatClass = ImmutableMap.of(
+  private static final Map<String, Class<? extends InputFormat>> inputFormatClass = ImmutableMap.of(
       ParquetExtensionsModule.PARQUET_AVRO_INPUT_PARSER_TYPE,
       DruidParquetAvroInputFormat.class,
       ParquetExtensionsModule.PARQUET_SIMPLE_INPUT_PARSER_TYPE,

@@ -150,15 +150,15 @@ public class CompactionTaskTest
   private static final Map<Interval, DimensionSchema> MIXED_TYPE_COLUMN_MAP = new HashMap<>();
   private static final IndexTuningConfig TUNING_CONFIG = createTuningConfig();
 
-  private static Map<String, DimensionSchema> DIMENSIONS;
-  private static List<AggregatorFactory> AGGREGATORS;
-  private static List<DataSegment> SEGMENTS;
-  private static RowIngestionMetersFactory rowIngestionMetersFactory = new TestUtils().getRowIngestionMetersFactory();
-  private static Map<DataSegment, File> segmentMap = new HashMap<>();
-  private static CoordinatorClient coordinatorClient = new TestCoordinatorClient(segmentMap);
-  private static AppenderatorsManager appenderatorsManager = new TestAppenderatorsManager();
-  private static ObjectMapper objectMapper = setupInjectablesInObjectMapper(new DefaultObjectMapper());
-  private static RetryPolicyFactory retryPolicyFactory = new RetryPolicyFactory(new RetryPolicyConfig());
+  private static final Map<String, DimensionSchema> DIMENSIONS;
+  private static final List<AggregatorFactory> AGGREGATORS;
+  private static final List<DataSegment> SEGMENTS;
+  private static final RowIngestionMetersFactory rowIngestionMetersFactory = new TestUtils().getRowIngestionMetersFactory();
+  private static final Map<DataSegment, File> segmentMap = new HashMap<>();
+  private static final CoordinatorClient coordinatorClient = new TestCoordinatorClient(segmentMap);
+  private static final AppenderatorsManager appenderatorsManager = new TestAppenderatorsManager();
+  private static final ObjectMapper objectMapper = setupInjectablesInObjectMapper(new DefaultObjectMapper());
+  private static final RetryPolicyFactory retryPolicyFactory = new RetryPolicyFactory(new RetryPolicyConfig());
 
   private TaskToolbox toolbox;
   private SegmentLoaderFactory segmentLoaderFactory;

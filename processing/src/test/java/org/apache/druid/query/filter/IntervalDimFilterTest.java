@@ -37,7 +37,7 @@ import java.util.Arrays;
 
 public class IntervalDimFilterTest
 {
-  private static ObjectMapper mapper;
+  private static final ObjectMapper mapper;
 
   @Before
   public void setUp()
